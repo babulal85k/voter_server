@@ -8,6 +8,12 @@ app.use(cors());
 
 const FILE_PATH = "./voters.json";
 
+// Ensure file exists before reading
+if (!fs.existsSync(FILE_PATH)) {
+    fs.writeFileSync(FILE_PATH, "[]", "utf8"); // Create empty JSON array
+}
+
+
 // Dummy users (Replace with database later)
 const users = [{ username: "admin", password: "1234" }];
 
@@ -52,4 +58,6 @@ app.post("/save-voters", (req, res) => {
 });
 
 // Start server
-app.listen(3000, () => console.log("Server running on http://localhost:3000"));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
