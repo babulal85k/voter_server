@@ -1,32 +1,188 @@
 [
   {
     "id": 1,
-    "name": "Rahul Sharma",
-    "father_name": "Anil Sharma",
-    "marked": true
+    "name": "Babita Digaskar",
+    "father_name": "मगरसिंह दिगास्कर",
+    "marked": false
   },
   {
     "id": 2,
-    "name": "Pooja Verma",
-    "father_name": "Suresh Verma",
-    "marked": true
+    "name": "Baldu",
+    "father_name": "सत्यराम",
+    "marked": false
   },
   {
     "id": 3,
-    "name": "Amit Kumar",
-    "father_name": "Ramesh Kumar",
+    "name": "Baldev Suryavanshi",
+    "father_name": "सत्यराम सूर्यवंशी",
     "marked": false
   },
   {
     "id": 4,
-    "name": "Neha Singh",
-    "father_name": "Vijay Singh",
+    "name": "Balram Kashyap",
+    "father_name": "मधुकर कश्यप",
     "marked": false
   },
   {
     "id": 5,
-    "name": "Sandeep Yadav",
-    "father_name": "Rajesh Yadav",
-    "marked": true
+    "name": "Basibatra Hal",
+    "father_name": "शुक्रराम",
+    "marked": false
+  },
+  {
+    "id": 6,
+    "name": "Babu Lal Mandal",
+    "father_name": "स्वनाम लाल",
+    "marked": false
+  },
+  {
+    "id": 7,
+    "name": "Birsapat Kashyap",
+    "father_name": "गुलाब कश्यप",
+    "marked": false
+  },
+  {
+    "id": 8,
+    "name": "Budhram Kashyap",
+    "father_name": "गुलाब कश्यप",
+    "marked": false
+  },
+  {
+    "id": 9,
+    "name": "Bedram Suryavanshi",
+    "father_name": "सत्यराम सूर्यवंशी",
+    "marked": false
+  },
+  {
+    "id": 10,
+    "name": "Bela Kashyap",
+    "father_name": "सुकुरमन कश्यप",
+    "marked": false
+  },
+  {
+    "id": 11,
+    "name": "Bhagvatibai Kashyap",
+    "father_name": "छोटेलाल",
+    "marked": false
+  },
+  {
+    "id": 12,
+    "name": "Bharat Lal Suryavanshi",
+    "father_name": "रामलाल सूर्यवंशी",
+    "marked": false
+  },
+  {
+    "id": 13,
+    "name": "Bhagram Sooryavanshi",
+    "father_name": "मनोजित डिगास्कर",
+    "marked": false
+  },
+  {
+    "id": 14,
+    "name": "Bharat Khare",
+    "father_name": "भारत",
+    "marked": false
+  },
+  {
+    "id": 15,
+    "name": "Bharti Kashyap",
+    "father_name": "रामसाय कश्यप",
+    "marked": false
+  },
+  {
+    "id": 16,
+    "name": "Bharti Yadav",
+    "father_name": "रामसाय यादव",
+    "marked": false
+  },
+  {
+    "id": 17,
+    "name": "Bhuru Suryavanshi",
+    "father_name": "जोखू",
+    "marked": false
+  },
+  {
+    "id": 18,
+    "name": "Bhuvneshwar Khare",
+    "father_name": "ताताप्रसाद खरे",
+    "marked": false
+  },
+  {
+    "id": 19,
+    "name": "Bhorova Baghel",
+    "father_name": "सुरेशराम बघेल",
+    "marked": false
+  },
+  {
+    "id": 20,
+    "name": "Anjani Kumari",
+    "father_name": "देव प्रसाद",
+    "marked": false
+  },
+  {
+    "id": 21,
+    "name": "Agghanbai Kashyap",
+    "father_name": "प्यारे कश्यप",
+    "marked": false
+  },
+  {
+    "id": 22,
+    "name": "Ajay Kumar Kashyap",
+    "father_name": "जीवन कश्यप",
+    "marked": false
+  },
+  {
+    "id": 23,
+    "name": "Anuraj Khare",
+    "father_name": "लालाराम खरे",
+    "marked": false
+  },
+  {
+    "id": 24,
+    "name": "Amrikabai Kashyap",
+    "father_name": "रामकुमार कश्यप",
+    "marked": false
+  },
+  {
+    "id": 25,
+    "name": "Amrautin Khare",
+    "father_name": "भारत",
+    "marked": false
+  },
+  {
+    "id": 26,
+    "name": "Amrita Suryavanshi",
+    "father_name": "सुनसिंगराम बघेल",
+    "marked": false
+  },
+  {
+    "id": 27,
+    "name": "Aravind Kumar Khare",
+    "father_name": "लालाराम खरे",
+    "marked": false
+  },
+  {
+    "id": 28,
+    "name": "Ashwani Kumar Kashyap",
+    "father_name": "रामकुमार कश्यप",
+    "marked": false
+  },
+  {
+    "id": 29,
+    "name": "Ashok Kumar U Sooryavanshi",
+    "father_name": "अशोक कुमार सूर्यवंशी",
+    "marked": false
+  },
+  {
+    "id": 30,
+    "name": "Aarti Suryavanshi",
+    "father_name": "मोहनलाल",
+    "marked": false
+  },
+  {
+    "id": 31,
+    "name": "Asha Kashyap",
+    "father_name": "कन्हे कश्यप",
+    "marked": false
   }
 ]
