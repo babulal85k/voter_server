@@ -1,43 +1,55 @@
 const express = require("express");
 const fs = require("fs");
 const cors = require("cors");
+const session = require("express-session");
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+
+// ✅ Configure CORS to allow frontend access
+app.use(cors({
+    origin: "http://localhost:5174",  // Allow frontend origin
+    methods: "GET,POST",              // Allow necessary methods
+    credentials: true                 // Enable cookies/session
+}));
+
+// ✅ Use sessions for authentication
+app.use(session({
+    secret: "mysecretkey",   // Change this in production
+    resave: false,
+    saveUninitialized: true,
+    cookie: { secure: false, httpOnly: true }  // Secure false for local testing
+}));
 
 const FILE_PATH = "./voters.json";
 
-// Ensure file exists before reading
+// ✅ Ensure voters.json exists
 if (!fs.existsSync(FILE_PATH)) {
     fs.writeFileSync(FILE_PATH, "[]", "utf8"); // Create empty JSON array
 }
 
-
-// Dummy users (Replace with database later)
+// Dummy users (Replace with a database later)
 const users = [{ username: "admin", password: "1234" }];
 
-// Store active session (For simplicity, we use an object)
-let loggedInUser = null;
-
-// Login API
+// ✅ Login API
 app.post("/login", (req, res) => {
     const { username, password } = req.body;
     const user = users.find((u) => u.username === username && u.password === password);
     if (user) {
-        loggedInUser = username; // Store logged-in user
+        req.session.user = username; // Store user in session
         return res.json({ message: "Login successful", username });
     }
     res.status(401).json({ error: "Invalid credentials" });
 });
 
-// Logout API
+// ✅ Logout API
 app.post("/logout", (req, res) => {
-    loggedInUser = null;
-    res.json({ message: "Logged out successfully" });
+    req.session.destroy(() => {
+        res.json({ message: "Logged out successfully" });
+    });
 });
 
-// Get voter list
+// ✅ Get voter list
 app.get("/voters", (req, res) => {
     fs.readFile(FILE_PATH, (err, data) => {
         if (err) return res.status(500).json({ error: "Error reading file" });
@@ -45,9 +57,9 @@ app.get("/voters", (req, res) => {
     });
 });
 
-// Save updated voter list (Only if logged in)
+// ✅ Save updated voter list (Only if logged in)
 app.post("/save-voters", (req, res) => {
-    if (!loggedInUser) {
+    if (!req.session.user) {
         return res.status(403).json({ error: "You must be logged in to mark voters" });
     }
 
@@ -57,7 +69,6 @@ app.post("/save-voters", (req, res) => {
     });
 });
 
-// Start server
+// ✅ Start server
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
+app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
