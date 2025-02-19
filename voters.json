@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Rahul Sharma",
+    "father_name": "Anil Sharma",
+    "marked": true
+  },
+  {
+    "id": 2,
+    "name": "Pooja Verma",
+    "father_name": "Suresh Verma",
+    "marked": true
+  },
+  {
+    "id": 3,
+    "name": "Amit Kumar",
+    "father_name": "Ramesh Kumar",
+    "marked": false
+  },
+  {
+    "id": 4,
+    "name": "Neha Singh",
+    "father_name": "Vijay Singh",
+    "marked": false
+  },
+  {
+    "id": 5,
+    "name": "Sandeep Yadav",
+    "father_name": "Rajesh Yadav",
+    "marked": true
+  }
+]
